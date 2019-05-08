@@ -1,0 +1,103 @@
+<htmL>
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio RocketSeat - JS [Módulo 1]</title>
+</head>
+<body>
+
+    <script>
+        var endereco = {
+            rua: "Rua dos Pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+       function retornaMensagem(endereco) {
+           return ("O usuário mora em "+endereco.cidade+" / "+endereco.uf+" no bairro "+endereco.bairro+
+           ", na rua "+endereco.rua+" com o nø "+endereco.numero);
+       }
+
+       console.log(retornaMensagem(endereco));
+       console.log("Fim do Exercício 1");
+    </script>
+
+    <script>
+
+       function pares(x,y) {
+
+       console.log("Os números pares são:");
+
+           while (x < y) {
+               if(x%2>0){
+                   x += 1;
+               }else{
+                   x += 2;
+               }
+                    if(x<y){
+                        console.log(x);
+                    }
+           }
+       }
+       pares(33,321);
+       console.log("Fim do Exercício 2");
+    </script>
+
+    <script>
+        function temHabilidade(skills) {
+            var i;
+            for (i = 0; i < 3; i++) {
+                if (skills[i] == "Drible") {
+                    console.log(true);
+                }else{
+                    console.log(false);
+                }
+            }
+        }
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        temHabilidade(skills);
+        console.log("Fim do Exercício 3");
+    </script>
+
+    <script>
+        function experiencia(anos) {
+            var anos;
+                if (anos>=0 && anos<=1){
+                    console.log("Iniciante")
+                }
+                if (anos>1 && anos<=3){
+                    console.log("Intermediario")
+                }
+                if (anos>3 && anos<=6){
+                    console.log("Avançado")
+                }
+                if (anos>6){
+                    console.log("G-dai")
+                }
+        }
+        var anosEstudo = 7;
+        experiencia(anosEstudo);
+        console.log("Fim do Exercício 4");
+    </script>
+
+    <script>
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        for(let usuario of usuarios){
+            console.log("O "+usuario.nome+" possui as habilidades "+usuario.habilidades)
+        }
+        console.log("Fim do Exercício 5");
+    </script>
+
+</body>
+</htmL>
